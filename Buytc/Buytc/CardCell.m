@@ -140,6 +140,10 @@
                                                                  toItem:nameLabel
                                                               attribute:NSLayoutAttributeBottom
                                                              multiplier:1.0f constant:1.0f]];
+    [detailsBgView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[sizeLabel(<=160@751)]"
+                                                                         options:0
+                                                                         metrics:nil
+                                                                            views:viewsDict]];
     
     [detailsBgView addConstraint:[NSLayoutConstraint constraintWithItem:priceLabel
                                                               attribute:NSLayoutAttributeRight
